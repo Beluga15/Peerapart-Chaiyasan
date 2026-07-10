@@ -1,0 +1,9 @@
+#input
+weight = int(input("Enter your weight"))
+height = int(input("Enter your height"))
+
+#process
+BMI = weight / (height ** 2)
+
+#output
+print("Your BMI",BMI)

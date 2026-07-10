@@ -1,0 +1,13 @@
+#input
+second = int(input("Enter your seconds :"))
+
+#process
+hour = second // 3660
+second_remin =second % 3660
+minute = second_remin // 60
+second_remin = second % 60
+
+
+#output
+print(second, "second =", hour, "hour, ", minute, "minute, ",second_remin, " second")
+print(f"{second} second = {hour} hour, {minute} minute, {second_remin} second")

@@ -1,0 +1,11 @@
+#input
+print("1. Circle Calculator:")
+redius = int(input("Entrer Redius :"))
+
+#process
+area_result = 3.14159 * redius**2
+circumferenc = 2 * 3.1419 * redius
+
+#output
+print("Calculate area : ",area_result)
+print("Calculate circumferenc : ",citcle_result)
