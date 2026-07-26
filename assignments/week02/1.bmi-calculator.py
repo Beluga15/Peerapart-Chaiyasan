@@ -15,17 +15,22 @@ Below 18.5: Underweight
 18.5 - 24.9: Normal weight
 25.0 - 29.9: Overweight
 30.0 and above: Obese
-
 """
 
-"""
-Write a program
-Question that converts between Thai Baht (THB) and US Dollars (USD).
-Requirements:
+# BMI Calculator
 
-Ask user to choose conversion direction (THB to USD or USD to THB)
-Ask for the amount to convert
-Use exchange rate: 1 USD = 35.5 THB
-Display result with 2 decimal places
-Show the calculation formula used
-"""
+weight = float(input("Enter your kilograms(k) :"))
+height = float(input("Enter your height(m) :"))
+
+bmi = weight / (height ** 2)
+
+print(f"BMI :{bmi:.1f}")
+
+if bmi < 18.5 :
+    print("Underweight")
+elif bmi < 25.0 :
+    print("Norrmal weight")
+elif bmi < 30.0 :
+    print("Overweight")
+else :
+    print("Obese")
