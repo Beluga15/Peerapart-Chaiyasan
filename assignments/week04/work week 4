@@ -1,0 +1,28 @@
+#รับข้อมูล "ชื่อจริง (เป็นภาษาอังกฤษ)" จากผู้ใช้
+#นับจำนวนสระในข้อความ ดังกล่าว
+
+#ตัวอย่างหน้าจอ
+#What is your name? : Peerapart
+#You have 4 vowels in your text.
+
+name = input("What is your name? :")
+letters = list(name)
+counter = 0
+
+for char in letters:
+    if char == 'a' or char == 'A' :
+        counter = counter +1
+
+    elif char == 'e' or char == 'E':
+        counter = counter +1 
+
+    elif char == 'i' or char  == 'I' :
+        counter = counter +1
+
+    elif char == 'o' or char  == 'O' :
+        counter = counter +1
+
+    elif char == 'u'  or char == 'U' :
+        counter = counter +1
+    print("You have", counter,"vowel in your text.")
+
