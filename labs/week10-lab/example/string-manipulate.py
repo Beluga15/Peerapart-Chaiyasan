@@ -174,7 +174,9 @@ print("\n=== STRING FORMATTING ===")
 name = "ashish"
 age = 8
 print("Using %% formatting:")
+printf("name=%s and age=%d, %.2f", name,age,gpa)
 print("name=%s and age=%d" % (name, age))
+
 print("name=%s and age=%d" % ("ankita", 6))
 
 # .format() method
@@ -185,6 +187,7 @@ sal = 20000
 
 # Different format styles
 str1 = '{},{},{}'.format(id_num, name, sal)
+strl = f'{id_num},{name},{sal}'
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
@@ -215,7 +218,7 @@ print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
 print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+words = text.split() # ['welcome','to','the','world','of','java']
 print(f"Split into words: {words}")
 print(f"Join with '-': {'-'.join(words)}")
 
